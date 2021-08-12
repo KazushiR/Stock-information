@@ -1,10 +1,10 @@
 from datetime import datetime
-import yfinance as yf
-import FinNews as fn
+import yfinance as yf #This library is from Yahoo Finance and pulls information on specific stocks
+import FinNews as fn #pulls news information on certain tickers
 from pytz import timezone
 import smtplib, time, json
 
-tickers = ["fcel", "nok", "ride", "amc", "gme", "clne"]
+tickers = ["fcel", "nok", "ride", "amc", "gme", "clne"] #List if tickers that I want to pull information on
 stock_times = ["18:33:50", "12:00:00", "15:55:00"]
 
 with open("gmail.json") as file: #opens a json file for my email credentials
